@@ -1,11 +1,12 @@
 
-def augment(array_prices)
-    # array_prices = [200, 300, 100, 500, 50, 20, 15]
+def augment(array)
+    n = array.count
     new_prices = []
     
-    array_prices.each do |ele|
-        new_prices.push(ele * 1.5)
+    n.times do |i|
+        new_prices.push array[i] * 1.5
     end
+    new_prices
 end
 
 print augment([200, 300, 100, 500, 50, 20, 15])
