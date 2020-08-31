@@ -1,10 +1,10 @@
 
 def augment(array, percent)
-    
+
     new_prices = []
     
-    array.each do |i|
-        new_prices.push i * percent
+    array.each do |ele|
+        new_prices.push ele * percent
     end
     new_prices
 end
